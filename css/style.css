@@ -38,7 +38,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
 .nav-ul li{
@@ -487,6 +486,6 @@ a:hover{
 /* R E S P O N S I V N E S S */
 @media screen and (max-width: 725px) {
     .nav-ul{
-    /* display: block; */
+    display: block;
     }
 }
