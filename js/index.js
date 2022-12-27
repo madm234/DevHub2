@@ -9,7 +9,7 @@ function changeTheme(){
         document.documentElement.style.setProperty('--color6', 'rgb(208, 208, 208)');
         document.documentElement.style.setProperty('--color7', '#ebda18');
         document.documentElement.style.setProperty('--color8', '#d32a0c');
-        document.getElementById('s-half').style.backgroundImage="url('../imgs/header.png')";
+        // document.getElementById('s-half').style.backgroundImage="url('../imgs/header.png')";
     }
     else
         {
@@ -20,6 +20,6 @@ function changeTheme(){
             document.documentElement.style.setProperty('--color6', '#0A2647');
             document.documentElement.style.setProperty('--color7', '#8FD6E1');
             document.documentElement.style.setProperty('--color8', '#C060A1');
-            document.getElementById('s-half').style.backgroundImage="url('../imgs/light-header.png')";
+            // document.getElementById('s-half').style.backgroundImage="url('../imgs/light-header.png')";
         }
 }
