@@ -101,19 +101,16 @@ a{
 
 .dev-temp{
     font-family: 'Unbounded', cursive;
-    font-size: 62px;
+    font-size: 170%;
 }
 
 .dev-in{
     font-family: 'Poppins', sans-serif;
-    font-size: 32px;
+    font-size: 100%;
 }
 
 .s-half{
-    display: flex;
     width: 50%;
-    justify-content: start;
-    align-items: center;
     background-image: url(../imgs/header.png);
     background-position:right;
     background-size: contain;
@@ -506,5 +503,25 @@ a:hover{
 
     .f-body{
         flex-direction: row-reverse;
+        min-height: 55vh;
+    }
+
+    .s-half{
+        width: 55%;
+        background-position:center;
+    }
+
+    .f-half{
+        width: 45%;
+        padding: 50px 7px;
+       align-items: flex-start; 
+    }
+
+    .dev-temp{
+        font-size: 7vw;
+    }
+
+     .dev-in{
+        font-size: 4vw;
     }
 }
