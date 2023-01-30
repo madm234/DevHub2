@@ -276,7 +276,12 @@ a{
 }
 
 .form-box{
-    border: var(--color4) solid 3px;
+    background: rgba(255, 255, 255, 0.1);
+
+     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    /* border-bottom:5px solid var(--color1);
+    border-right:5px solid var(--color1); */
+    backdrop-filter: blur(5px);
     width: 74%;
     height: 84%;
     border-radius: 10px;
@@ -381,8 +386,50 @@ a{
     color: var(--color4);
 }
 
-.fif-body{
-    background-color: var(--color3);
+.positon-container{
+    margin-bottom: 170px;
+    position: relative;
+}
+
+.temps{
+    position: absolute;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    left: -30px;
+    bottom: 40px;
+    z-index: -12;
+    font-size: 160px;
+    /* background-color: #ebda18; */
+    color: var(--color1);
+    transform: rotate(-30deg);
+}
+
+.pos1{
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    border-bottom:5px solid var(--color1);
+    border-right:5px solid var(--color1);
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+.img1{
+    position: absolute;
+    right: 0px;
+    bottom: -100px;
+    width: 17%;
+}
+
+.img2{
+    position: absolute;
+    left: 0px;
+    bottom: -100px;
+    width: 20%;
 }
 
 .about-head{
@@ -406,9 +453,10 @@ a{
 }
 
 .about-me{
+  position: relative;
   margin-top: 200px;
   height: 70vh;
-  background-color: var(--color1);
+  background-color: var(--color2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -421,8 +469,9 @@ a{
 
 .img-partition{
     margin: 0 20px 0;
-    border-right: solid var(--color2) 5px;
+    border-right: solid rgb(165, 161, 161) 5px;
     height: 20%;
+    opacity: 40%;
 }
 
 .prof-desc{
@@ -435,7 +484,24 @@ a{
     font-size: 50px;
 }
 
+.semi-circle{
+    width: 240px;
+    height: 240px;
+    border-radius:0 0 40% 40%;
+    background-color: var(--color3);
+    position: absolute;
+    top: -150px;
+}
 
+/* .envelope{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 28px;
+    left: 48%;
+} */
 
 
 
@@ -486,12 +552,17 @@ a:hover{
 }
 
 .redirect-items:hover{
-    background-color: var(--color1);
+    background-color: var(--color2);
+}
+
+.dis-color:hover{
+    color: var(--color2);
 }
 
 
 /* R E S P O N S I V N E S S */
 @media screen and (max-width: 650px) {
+    
     .nav-ul{
     display: block;
     margin-top: 49px;
@@ -523,5 +594,35 @@ a:hover{
 
      .dev-in{
         font-size: 4vw;
+    }
+
+    #linux{
+        display: none;
+    }
+
+    .offer-grid{
+    grid-template-columns: auto auto;
+    }
+
+    .oppo{
+        display: block;
+    }
+
+    .oppo-desc{
+        width: 100vw;
+    }
+
+    .cubem{
+        display: none !important;
+    }
+
+    .about-head{
+    font-size: 60px;
+    }
+
+    .about-desc{
+    font-size: 15px;
+    line-height:24px;
+    word-spacing:4px;
     }
 }
