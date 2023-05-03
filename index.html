@@ -24,26 +24,29 @@
       <ul class="nav-ul">
         <li class="redirect-items"><a href="#box">Projects</a></li>
         <li class="redirect-items"><a href="#box">Community</a></li>
-        <!-- <li><a href="https://discord.gg/YRkYtXr3" target="_blank"><i class="fa-brands fa-discord dis-color" style="font-size: 30px;"></i></a></li> -->
+        <li class="dis_prom"><a href="https://discord.gg/YRkYtXr3" target="_blank"><i class="fa-brands fa-discord dis-color" style="font-size: 30px;"></i></a></li>
         <li class="redirect-items"><a href="#about">About</a></li>
         <li class="redirect-items"><a href="">Contact</a></li>
       </ul>
     </nav>
 
+     <!-- Moon Icon -->
+     <div class="theme">
+      <img src="moon1.png" id="themechng" alt="theme" onclick="changeTheme()" width="30px" />
+    </div>
+
+    <!-- Hamburger Icon(to dispaly navbar options for <600px) -->
+    <div class="hamOption">
+      <p></p><p></p><p></p>
+    </div>
+
     <!--<hr class="line-break">-->
 
     <!--main body-->
     <div class="main_body">
+
+      <!-- 1st part of body >600px-->
       <div class="f-body">
-        <div class="theme">
-          <img
-            src="moon1.png"
-            id="themechng"
-            alt="theme"
-            onclick="changeTheme()"
-            width="30px"
-          />
-        </div>
         <div class="f-half">
           <h1>
             <span class="dev-temp"
@@ -55,6 +58,14 @@
         </div>
 
         <div class="s-half" id="s-half"></div>
+      </div>
+
+      <!-- 1st part of body <600px-->
+      <div class="f_resBody">
+        <!-- <h2>Want a project ?</h2> -->
+        <div id="f_resImage"></div>
+        <h1><b>Have a project !</b></h1>
+        <p>Work on some amazing web related projects with me and establish a better work portfolio for yours.</p>
       </div>
 
       <!--T E C H N O L O G I E S-->
@@ -106,7 +117,7 @@
           <div class="oppo-desc">
             <h1>
               A Box of
-              <span style="color: rgb(200, 35, 183)">Opportunities !</span>
+              <span class="oppn" style="color: rgb(200, 35, 183)">Opportunities !</span>
             </h1>
             <br />
             <div class="info">
@@ -218,7 +229,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="fth2-body">
         <p class="about-head">Positions</p>
         <div class="about-desc">
@@ -235,6 +246,12 @@
             </div>
             
         </div>
+
+      <!-- discord positions -->
+      <!-- <div class="disP">
+        <p id="disPos">Discord Positions Soon!</p>
+        <img src="./imgs/game.png" alt="" width="100%">
+      </div> -->
 
       </div>
 
@@ -258,6 +275,21 @@
         </div>
       </div>
 
+
+      <div class="userHelp">
+        <div class="sytemSetup">
+          Quick system setup 
+        </div>
+
+        <a href="links/gitTut.html" class="sytemSetup">
+          Github Tour
+        </a>
+
+        <a href="links/faq.html" class="sytemSetup">
+          FAQ's
+        </a>
+     </div>
+
      <div class="end-body">
       <div class="about-me">
         <img src="imgs/prof.jpg" alt="" width="7%" class="prof-img" />
@@ -279,15 +311,18 @@
      </div>
      
     </div>
-
-    <!--<lord-icon
+  
+      <!--<lord-icon
+    </div>
     src="https://cdn.lordicon.com/osuxyevn.json"
     trigger="hover"
     colors="primary:pink"
     state="hover-2"
     style="width:100px;height:100px">
 </lord-icon>-->
-
+    <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script> -->
+    <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.268/build/spline-viewer.js"></script> -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.269/build/spline-viewer.js"></script>
     <script src="js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

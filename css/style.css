@@ -9,6 +9,7 @@
     margin: 0;
     scroll-behavior: smooth;
     transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    /* overflow-x: hidden; */
 }
 
 :root{
@@ -26,6 +27,7 @@
 body{
     background-color: var(--color3);
     overflow-x: hidden;
+    cursor: default;
 }
 
 .navbar{
@@ -349,6 +351,13 @@ a{
     font-size: 17px;
 }
 
+select option {
+    margin: 40px;
+    background: black;
+    color: var(--color4);
+    /* text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); */
+}
+
 .form-sub-btn{
     text-align: center;
 }
@@ -421,14 +430,16 @@ a{
 .img1{
     position: absolute;
     right: 0px;
-    bottom: -100px;
+    top: 0;
+    /* bottom: -100px; */
     width: 17%;
 }
 
 .img2{
     position: absolute;
     left: 0px;
-    bottom: -100px;
+    top: 0;
+    /* bottom: -100px; */
     width: 20%;
 }
 
@@ -455,7 +466,7 @@ a{
 .about-me{
   position: relative;
   margin-top: 200px;
-  height: 70vh;
+  height: 50vh;
   background-color: var(--color2);
   display: flex;
   justify-content: center;
@@ -559,9 +570,62 @@ a:hover{
     color: var(--color2);
 }
 
+.fif-body{
+    margin-top: 200px;
+}
+
+.userHelp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    font-family: 'Lato', sans-serif;
+    white-space: nowrap;
+    flex-wrap: wrap;
+}
+
+.sytemSetup{
+    background: #ffffff;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 0.5rem 0.5rem;
+    text-decoration: none;
+    color: black;
+    transition: all linear 300ms;
+}
+
+.sytemSetup:hover{
+    background: #c823b7;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* R E S P O N S I V N E S S */
 @media screen and (max-width: 650px) {
+
+    .navbar{
+        display: none;
+    }
     
     .nav-ul{
     display: block;
@@ -572,12 +636,30 @@ a:hover{
     margin: 12px 17px;
     }
 
-    .f-body{
-        flex-direction: row-reverse;
-        min-height: 55vh;
+    .dis_prom{
+        display: none;
     }
 
-    .s-half{
+    .hamOption{
+        position: absolute;
+        top: 20px;
+        left: 5vw;
+        color: var(--color4);
+    }
+    
+    .hamOption p{
+       background-color: var(--color2);
+       width: 25px;
+       height: 4px;
+       margin: 5px 0;
+       border-radius: 5px;
+    }
+
+    .f-body{
+       display: none;
+    }
+
+    /* .s-half{
         width: 55%;
         background-position:center;
     }
@@ -586,6 +668,33 @@ a:hover{
         width: 45%;
         padding: 50px 7px;
        align-items: flex-start; 
+    } */
+
+    .f_resBody{
+        margin: 8rem 0;
+        width: 100vw;
+        /* margin-bottom: 60vh; */
+        text-align: center;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .f_resBody p{
+        font-size: 0.9rem;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0 4rem;
+    }
+
+    /* #f_resImage{
+        width: 35rem;
+        padding-right: 5rem;
+    } */
+
+    #f_resImage{
+        height: 60vh;
+        /* width: 100%; */
+        background: url('../imgs/out.png') no-repeat center;
+        background-size: cover;
     }
 
     .dev-temp{
@@ -600,20 +709,91 @@ a:hover{
         display: none;
     }
 
+    .grid-item{
+        font-size: 80px;
+    }
+
     .offer-grid{
     grid-template-columns: auto auto;
     }
 
     .oppo{
         display: block;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .oppo .oppo-desc{
+        width: 100%;
+
     }
 
-    .oppo-desc{
-        width: 100vw;
+    .oppo-desc h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .info p{
+        font-size: 18px;
+        padding: 0 50px;
     }
 
     .cubem{
         display: none !important;
+    }
+
+    .projects .offer-grid{
+    grid-template-columns: auto;
+    }
+
+    .offer-grid .grid-item2{
+        margin-bottom: 15px;
+        width: 70vw;
+      }
+
+    .message{
+        height: 70vh;
+    }   
+
+    .message-pic{
+        display: none;
+    }  
+
+    .choice-form{
+        width: 100%;
+    }
+
+    .form-box{
+        width: 85%;
+        height: 90%;
+    }
+    
+    .form-content{
+        font-size: 15px;
+        padding:22px 0;
+    }
+
+    .form-content input{
+        height: 20px;
+        width: 150px;
+    }
+
+    .form-content textarea{
+        height: 140px;
+        width: 250px;
+    }
+
+    .form-content select{
+        height: 35px;
+        width: 150px;
+    }
+
+    option{
+        height: 3px;
     }
 
     .about-head{
@@ -624,5 +804,26 @@ a:hover{
     font-size: 15px;
     line-height:24px;
     word-spacing:4px;
+    }
+
+    .semi-circle{
+        width: 150px;
+        height: 200px;
+    }
+
+    .about-me img,.img-partition{
+        display: none;
+    }
+
+    .disP{
+       position: relative; 
+    }
+
+    #disPos{
+        position: absolute; 
+        color: white; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.5rem;
+        top: 20px;
     }
 }
