@@ -21,6 +21,7 @@
     --color6:rgb(208, 208, 208);
     --color7:#ebda18;
     --color8:#d32a0c;
+    --colorLight: #b568ade8;
     /* --color6:rgb(200,35,183); */
 }
 
@@ -461,6 +462,7 @@ select option {
     font-family: 'Unbounded', cursive;
     line-height:30px;
     word-spacing: 5px;
+    text-align: center;
 }
 
 .about-me{
@@ -529,13 +531,6 @@ select option {
     color: var(--color4);
 }
 
-a:hover{
-    /* border: solid var(--color1);
-    padding: 5px;
-    border-radius: 20px;
-    background-color: var(--color1); */
-}
-
 ::selection{
     color: var(--color3);
     background-color: var(--color2);
@@ -600,6 +595,9 @@ a:hover{
     color: white;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
 
 
 

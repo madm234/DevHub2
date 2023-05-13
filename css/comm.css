@@ -1,0 +1,129 @@
+body{
+    position: relative;
+    /* margin: 0 2rem !important; */
+    background-color: black !important;
+    /* background: url('../imgs/boat.png') center no-repeat; */
+    /* background-size: cover; */
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.carousel-item{
+    height: 20rem;
+}
+
+/* .carousel-caption{
+    color: black !important; 
+} */
+
+.modal-header,.modal-footer{
+    border: none !important; 
+}
+
+#fqHead{
+    color: var(--colorLight);
+    font-size: 4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    /* text-align: center; */
+}
+
+.cmnty-cntnt{
+    padding: 0 2rem;
+}
+
+.cmnty-cntntImg{
+    position: fixed;
+    width: 40rem;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 0.5;
+}
+
+.comm-desc{
+    color: #ffe6f8;
+    width: 95%;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Unbounded', cursive;
+    line-height:30px;
+    word-spacing: 5px;
+    /* color: white; */
+}
+
+.cardo{
+    margin: auto !important;
+    max-width: 45rem;
+}
+
+.carousel-inner{
+    height: 15rem;
+    /* overflow:visible !important; */
+}
+
+.nav-item .active{
+    background-color: #7e5285 !important;
+}
+
+.nav-link{
+    color: white !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-header{
+    background-color: #a267ab !important;
+    color: white !important;
+}
+
+.card-body{
+    background-color: #ce93d8 !important;
+}
+
+.contTit{
+    color: yellow;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contributors p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profo{
+    font-size:initial !important;
+}
+
+.profo img{
+    width: 5rem;
+    margin: 1rem 2rem;
+}
+
+@media(max-width: 600px) {
+    .cmnty-cntntImg{
+        width: 20rem;
+    }
+
+    .comm-desc{
+        font-size: 15px;
+        line-height:25px;
+    }
+
+    .iimgas{
+        display: none !important;
+    }
+
+    .carousel-inner{
+        height: 235px;
+        /* overflow:visible !important; */
+    }
+    
+    .cardo{
+        max-width: 310px !important;
+    }
+}
